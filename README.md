@@ -31,5 +31,5 @@
    
 ## Контактная информация
     Telegram: @synim503
-    Email:    
+    Email: vadim.kuznetsov1009@gmail.com
       
