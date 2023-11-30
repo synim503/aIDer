@@ -7,7 +7,7 @@ function get_token($phone_number){
     $curl = curl_init();
 
     curl_setopt_array($curl, array(
-        CURLOPT_URL => 'https://gopromenad.com/api/v1/check_sms_code_login_register',
+        CURLOPT_URL => 'https://*****.com/api/v1/check_s*****n_register',
         CURLOPT_RETURNTRANSFER => true,
         CURLOPT_ENCODING => '',
         CURLOPT_MAXREDIRS => 10,
@@ -15,9 +15,9 @@ function get_token($phone_number){
         CURLOPT_FOLLOWLOCATION => true,
         CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
         CURLOPT_CUSTOMREQUEST => 'POST',
-        CURLOPT_POSTFIELDS => array('rid' => '8555c2359f9e48fc90689ee3e158f41d',  'phone_code' => '+1','phone_number' => "{$phone_number}",'sms_code' => '0000'),
+        CURLOPT_POSTFIELDS => array('rid' => '*****',  'phone_code' => '+1','phone_number' => "{$phone_number}",'sms_code' => '0000'),
         CURLOPT_HTTPHEADER => array(
-            'Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvZ29wcm9tZW5hZC5jb21cL2FwaVwvdjFcL2NoZWNrX3Ntc19jb2RlX2xvZ2luX3JlZ2lzdGVyIiwiaWF0IjoxNTg0OTc0MzcwLCJleHAiOjE1OTAxNTgzNzAsIm5iZiI6MTU4NDk3NDM3MCwianRpIjoiUFVhYmxKRjZLQjhQQUJhTCIsInN1YiI6MjAsInBydiI6Ijg3ZTBhZjFlZjlmZDE1ODEyZmRlYzk3MTUzYTE0ZTBiMDQ3NTQ2YWEifQ.90yVYhyiBiaO2pHtKLm92e2sWyl9RaNPNkoyNVA6qEc'
+            'Authorization: Bearer ***'
         ),
     ));
 
@@ -35,7 +35,7 @@ function get_notifications($auth_key){
     $curl = curl_init();
 
     curl_setopt_array($curl, array(
-        CURLOPT_URL => 'https://gopromenad.com/api/v1/notifications',
+        CURLOPT_URL => 'https://*****.com/api/v1/notifications',
         CURLOPT_RETURNTRANSFER => true,
         CURLOPT_ENCODING => '',
         CURLOPT_MAXREDIRS => 10,
@@ -59,7 +59,7 @@ function make_visit($goid, $auth_key){
     $curl = curl_init();
 
     curl_setopt_array($curl, array(
-        CURLOPT_URL => 'https://gopromenad.com/api/v1/make_visit',
+        CURLOPT_URL => 'https://*****.com/api/v1/make_visit',
         CURLOPT_RETURNTRANSFER => true,
         CURLOPT_ENCODING => '',
         CURLOPT_MAXREDIRS => 10,
@@ -82,7 +82,7 @@ function make_like($goid,$auth_key){
     $curl = curl_init();
 
     curl_setopt_array($curl, array(
-        CURLOPT_URL => 'https://gopromenad.com/api/v1/make_like',
+        CURLOPT_URL => 'https://*****.com/api/v1/make_like',
         CURLOPT_RETURNTRANSFER => true,
         CURLOPT_ENCODING => '',
         CURLOPT_MAXREDIRS => 10,
@@ -112,7 +112,7 @@ function get_laod_user_date($id, $auth_token){
     $curl = curl_init();
 
     curl_setopt_array($curl, array(
-        CURLOPT_URL => 'https://gopromenad.com/api/v1/load_user_data',
+        CURLOPT_URL => 'https://*****.com/api/v1/load_user_data',
         CURLOPT_RETURNTRANSFER => true,
         CURLOPT_ENCODING => '',
         CURLOPT_MAXREDIRS => 10,
